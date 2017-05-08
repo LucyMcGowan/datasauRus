@@ -25,13 +25,13 @@ par(state)
 ## ggplot
 if(require(ggplot2)){
   ggplot(box_plots, aes(x=left))+
-    geom_density()
+    geom_histogram(bins = 100)
   ggplot(box_plots, aes(x=lines))+
-    geom_density()
+    geom_histogram(bins = 100)
   ggplot(box_plots, aes(x=normal))+
-    geom_density()
+    geom_histogram(bins = 100)
   ggplot(box_plots, aes(x=right))+
-    geom_density()
+    geom_histogram(bins = 100)
   ggplot(box_plots, aes(x=split))+
-    geom_density()
+    geom_histogram(bins = 100)
 }
